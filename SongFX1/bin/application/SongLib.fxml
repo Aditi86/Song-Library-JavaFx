@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<!-- Done by: Aditi Patel & Aakaash Prakash Hemdev --> 
+
+
+<AnchorPane prefHeight="529.0" prefWidth="626.0" style="-fx-background-color: #051622;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+	<fx:include source="ReadDisplaySongList.fxml" />
+  
+   <Circle fill="#04402b" layoutX="34.0" layoutY="14.0" radius="100.0" stroke="BLACK" strokeType="INSIDE" />
+   <Label layoutX="14.0" layoutY="37.0" prefHeight="50.0" prefWidth="158.0" text="Song Library" textFill="BEIGE">
+      <font>
+         <Font name="Berlin Sans FB Demi Bold" size="23.0" />
+      </font>
+   </Label>
+   
+</AnchorPane>

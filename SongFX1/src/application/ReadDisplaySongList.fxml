@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<!-- Done by: Aditi Patel & Aakaash Prakash Hemdev -->
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="543.0" prefWidth="653.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ReadDisplaySongList">
+   <children>
+      <ListView fx:id="song_Artist_List" layoutX="280.0" layoutY="21.0" prefHeight="350.0" prefWidth="358.0" style="-fx-background-color: #f5f5dc;" />
+      <TextField fx:id="songName" layoutX="297.0" layoutY="407.0" />
+      <TextField fx:id="songArtist" layoutX="457.0" layoutY="407.0" />
+      <TextField fx:id="songAlbum" layoutX="297.0" layoutY="463.0" />
+      <TextField fx:id="songYear" layoutX="457.0" layoutY="463.0" />
+     
+      <Button layoutX="330.0" layoutY="493.0" mnemonicParsing="false" onAction="#add" prefHeight="35.0" prefWidth="100.0" style="-fx-background-color: #f5f5dc;" text="ADD" textFill="#232321">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="473.0" layoutY="493.0" mnemonicParsing="false" onAction="#edit" prefHeight="35.0" prefWidth="100.0" style="-fx-background-color: #f5f5dc;" text="UPDATE">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="66.0" layoutY="437.0" mnemonicParsing="false" onAction="#delete" prefHeight="35.0" prefWidth="75.0" style="-fx-background-color: #f5f5dc;" text="DELETE">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="13.0" layoutY="129.0" prefHeight="26.0" prefWidth="75.0" text="Details" textFill="BEIGE">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="297.0" layoutY="390.0" text="Song Name" textFill="BEIGE">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="457.0" layoutY="390.0" text="Artist" textFill="BEIGE">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="297.0" layoutY="445.0" prefHeight="18.0" prefWidth="46.0" text="Album" textFill="BEIGE">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="459.0" layoutY="446.0" text="Year" textFill="BEIGE">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="437.0" layoutY="503.0" text="OR" textAlignment="CENTER" textFill="BEIGE">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="14.0" />
+         </font>
+      </Label>
+      <VBox layoutX="8.0" layoutY="172.0" prefHeight="200.0" prefWidth="266.0" spacing="5.0">
+         <children>
+            <Label prefHeight="30.0" prefWidth="265.0" style="-fx-background-color: #04402b;" text="Album: " textFill="BEIGE">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="5.0" top="10.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </Label>
+            <Label fx:id="selectedAlbum" prefHeight="30.0" prefWidth="331.0" style="-fx-background-color: #04402b;" text="Label " textFill="BEIGE">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="5.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </Label>
+            <Label prefHeight="30.0" prefWidth="331.0" style="-fx-background-color: #04402b;" text="Year: " textFill="BEIGE">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="5.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </Label>
+            <Label fx:id="selectedYear" prefHeight="30.0" prefWidth="331.0" style="-fx-background-color: #04402b;" text="Label " textFill="BEIGE">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="5.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
